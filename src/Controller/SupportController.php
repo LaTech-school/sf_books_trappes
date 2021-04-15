@@ -8,9 +8,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class SupportController extends AbstractController
 {
-    /**
-     * @Route("/contact", name="contact")
-     */
     public function contact(): Response
     {
         return $this->render('support/contact.html.twig', [
