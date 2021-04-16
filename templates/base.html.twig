@@ -17,13 +17,20 @@
 
         <header>
             <nav>
-                <a href="{{ path('homepage') }}">Accueil</a>
-                <a href="{{ path('book') }}">Nos livres</a>
-                <a href="{{ path('contact') }}">Contactez-Nous</a>
+                <a href="{{ path('homepage') }}"> <i class="ri-home-2-line"></i> Accueil</a>
+                <a href="{{ path('book:index') }}"> <i class="ri-book-line"></i> Nos livres</a>
+                <a href="{{ path('contact') }}"> <i class="ri-at-line"></i> Contactez-Nous</a>
                 <a href="{{ path('faq') }}">F.A.Q.</a>
             </nav>
         </header>
+        
+        
+        <main>
+            <div class="container">
+                {% block body %}{% endblock %}
+            </div>
+        </main>
+        
 
-        {% block body %}{% endblock %}
     </body>
 </html>
